@@ -1,0 +1,4 @@
+{% for item in pageScripts %}
+    <script src="{{ item }}" type="module"></script>
+{% endfor %}
+<script>{{ scriptLoader | safe }}</script>
